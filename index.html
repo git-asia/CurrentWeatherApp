@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/810add171b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>CurrentWeatherApp</title>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="top">
+                <h1> current weather</h1>
+                <div class="main-info">
+                    <div>
+                        <h2><span class ="city-name"></span> (<span class ="city-country"></span>)</h2>
+                        <div class="sun">
+                            <i class="bi bi-sunrise"></i><p class="sun-rise"></p>
+                        <i class="bi bi-sunset"></i><p class="sun-set"></p>
+                        </div>
+                        <input class="search-input" type="text" placeholder="Search a city...">
+                        <button class="search-btn">Search</button>
+                        <button class="show-location"><i class="bi bi-geo-alt-fill"></i></button>
+                        <p class="error-message"></p>
+                    </div>
+                    <img src="./media/sun.png" alt="Icon describing the weather" class="weather-icon">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="headings">
+                    <p>Temperature</p>
+                    <p>Feels like</p>
+                    <p>min</p>
+                    <p>max</p>
+                </div>
+                <div class="weather-info">
+                    <p class="temp"></p>
+                    <p class="temp-feel"></p>
+                    <p class="temp-min"></p>
+                    <p class="temp-max"></p>
+                </div>
+                <div class="headings">
+                    <p>Cloudiness</p>
+                    <p>Wind speed</p>
+                    <p>Wind direction</p>
+                    <p>Humidity</p>
+                    <p>Pressure</p>
+                </div>
+                <div class="weather-info">
+                    <p class="weather"></p>
+                    <p class="wind-speed"></p>
+                    <p class="wind-direction"></p>
+                    <p class="humidity"></p>
+                    <p class="pressure"></p>
+                    </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
