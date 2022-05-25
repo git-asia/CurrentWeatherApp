@@ -94,7 +94,7 @@ getMyLocation();
 
 // SEARCH BY LOCATION
 const getWeatherBySearch = (city) => {
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => weatherInfo(res))
